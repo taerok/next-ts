@@ -36,7 +36,8 @@
     "test": "cross-env FORCE_COLOR=1 jest --passWithNoTests",
     "e2e:headless": "playwright test",
     "e2e:ui": "playwright test --ui",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|.yarn/|storybook-static/|jest.*.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.json' --image graph.svg"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -45,6 +46,7 @@
     "@next/bundle-analyzer": "^14.0.1",
     "@t3-oss/env-nextjs": "^0.7.1",
     "git-conventional-commits": "^2.6.5",
+    "madge": "^6.1.0",
     "next": "^14",
     "next-compose-plugins": "^2.2.1",
     "react": "^18",
