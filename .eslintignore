@@ -1,0 +1,11 @@
+build/*
+dist/*
+public/*
+**/node_modules/*
+
+**/.next/*
+next.config.mjs
+
+playwright-report
+storybook-static
+.yarn
