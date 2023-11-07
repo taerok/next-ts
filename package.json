@@ -22,7 +22,7 @@
     "node": "^21"
   },
   "scripts": {
-    "dev": "cross-env FORCE_COLOR=1 next dev",
+    "dev": "cross-env FORCE_COLOR=1 next dev -p 8002",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
