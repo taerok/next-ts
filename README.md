@@ -36,7 +36,6 @@
 
 2. 커밋을 하기 전에 `.pre-commit-config.yaml` 파일에 정의된 훅이 커밋 메시지를 검증합니다.
 
-
 ## Getting Started
 
 First, run the development server:
